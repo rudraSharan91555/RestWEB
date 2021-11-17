@@ -1,0 +1,167 @@
+/* CSS Reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Css Variable  */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navigation Bar:Logo and Image  */
+#logo{
+    margin: 5px 15px;     
+}
+
+#logo img{
+    height: 55px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar:List styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    height: 564px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url("tbg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services conatiner  */
+#services{ 
+    margin: 1px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34;
+    margin: 3px 6px;
+    border-radius: 22px;
+    background-color: rgb(238, 226, 226);
+}
+#services .box img{
+    height: 110px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;  
+}
+
+/* client Section  */
+#client-section{
+    height: 344px;
+}
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.client-item img{
+    height: 124px;   
+}
+
+/* utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 22px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    cursor: pointer;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.center{
+    text-align: center;
+}
